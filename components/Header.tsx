@@ -40,8 +40,24 @@ function Header() {
           type="text"
           placeholder="Search Reddit"
         />
+
         <button type="submit" hidden />
       </form>
+
+      <div className="hidden text-gray-500 space-x-2 items-center mx-5  lg:inline-flex">
+        <SparklesIcon className="icon" />
+        <GlobeIcon className="icon" />
+        <ChatIcon className="icon" />
+
+        <hr className="h-10 border border-gray-100" />
+        <ChatIcon className="icon" />
+        <BellIcon className="icon" />
+        <PlusIcon className="icon" />
+        <SpeakerphoneIcon className="icon" />
+      </div>
+      <div className="ml-5 flex items-center lg:hidden">
+        <MenuIcon className="icon" />
+      </div>
     </div>
   );
 }
